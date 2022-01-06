@@ -1,0 +1,169 @@
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: 2% repeat(2, 1fr) 2%;
+  grid-template-rows: 0;
+  z-index: 100;
+}
+
+.firstHamburger,
+.secondHamburger {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: all ease-in-out 0.5s;
+}
+
+.activeHamburgerButtonFirst {
+  transform: rotateX(90deg);
+}
+
+.activeHamburgerButtonSecond {
+  transform: rotateX(90deg);
+}
+
+.navlink a:not(.name) {
+  color: white;
+  font-family: $font;
+  font-size: 2rem;
+}
+
+.navlink a i {
+  font-size: 4rem;
+  margin-right: 50px;
+  transition: all ease-in-out 0.2s;
+}
+
+.navlink a i:hover {
+  opacity: 0.7;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  font-family: $fontFuturaLight;
+  letter-spacing: 0.25rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.name:hover {
+  opacity: 0.7;
+}
+.rightNavbar {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.leftNavbar {
+  grid-row: 0;
+  grid-column: 2/3;
+  margin-top: 20px;
+}
+
+#frenchLanguage {
+  margin-right: 20px;
+  font-family: $fontFuturaMedium;
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  transition: all ease-in-out 0.2s;
+}
+
+#frenchLanguage:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#frenchLanguage:focus {
+  outline: none;
+}
+
+#englishLanguage {
+  margin-right: 20px;
+  font-family: $fontFuturaMedium;
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  transition: all ease-in-out 0.2s;
+}
+
+#englishLanguage:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#englishLanguage:focus {
+  outline: none;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.fullNavbar {
+  transform: translateY(-150%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.75s all ease-in-out;
+  z-index: 50;
+}
+
+.navlinksFull a {
+  font-family: $fontFuturaMedium;
+  color: white;
+  font-weight: 900;
+  font-size: 10rem;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  text-decoration: line-through transparent;
+}
+
+.navlinksFull a:hover {
+  text-decoration: line-through white;
+}
+
+.fullNavbarActive {
+  transform: translateY(0%);
+  z-index: 50;
+}
+
+.toggle .firstHamburger {
+  transform: rotate(-45deg);
+}
+
+.toggle .secondHamburger {
+  transform: rotate(45deg);
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: red;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles pour cette Media Queries */
+}
+
+//Smartphone media queries
+@media only screen and (max-width: 650px) {
+  .fullNavbar a {
+    font-size: 7rem;
+  }
+}

@@ -1,0 +1,1177 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url(/font/FuturaPTHeavy.otf);
+}
+
+@font-face {
+  font-family: "FuturaBold";
+  src: url(/font/FuturaPTHeavy.otf);
+}
+
+@font-face {
+  font-family: "FuturaMedium";
+  src: url(/font/FuturaPTMedium.otf);
+}
+
+@font-face {
+  font-family: "FuturaLight";
+  src: url(/font/FuturaPTLight.otf);
+}
+
+@font-face {
+  font-family: "FuturaItalic";
+  src: url(/font/FuturaPTCondBookOblique.otf);
+}
+
+#home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftSectionHome {
+  width: 50%;
+}
+
+.rightSectionHome {
+  width: 50%;
+}
+
+.landingPage {
+  height: 100vh;
+  width: 100%;
+  background-color: #061d38;
+}
+
+#fullpage {
+  background-color: #061d38;
+}
+
+.heroTitle {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  color: white;
+  -ms-flex-item-align: start;
+      align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: sans-serif;
+  font-size: 10rem;
+  z-index: 25;
+}
+
+.heroTitle :nth-child(2) {
+  margin-left: 40px;
+}
+
+.firstRedLine {
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+  top: 240px;
+}
+
+.secondRedLine {
+  display: block;
+  position: relative;
+  top: 150px;
+  left: 110px;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+}
+
+.descriptionHero {
+  position: relative;
+  font-size: 2.5rem;
+  top: 70px;
+  font-weight: 300;
+}
+
+.svgHeadline {
+  color: #ff4d5a;
+  font-family: sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  z-index: 20;
+  position: relative;
+  right: 95px;
+  top: 300px;
+}
+
+.scrollDown {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background-color: white;
+  bottom: 4%;
+  left: 2%;
+  color: white;
+  font-family: "FuturaMedium";
+  font-size: 1.5rem;
+}
+
+.scrollDown p {
+  position: relative;
+  left: 10px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+#scene-a {
+  position: absolute;
+  left: 51%;
+  top: 15%;
+}
+
+.stars {
+  position: relative;
+  z-index: 1;
+  top: -100px;
+  left: -500px;
+}
+
+.moonImage {
+  position: relative;
+  left: 0%;
+  top: -100px;
+  z-index: 15;
+  -webkit-filter: drop-shadow(0px 0px 120px #ffffff);
+          filter: drop-shadow(0px 0px 120px #ffffff);
+}
+
+.moonlight {
+  position: relative;
+  left: -420px;
+  top: -420px;
+  z-index: 15;
+}
+
+.cloud01 {
+  position: relative;
+  top: 300px;
+  left: -200px;
+  z-index: 20;
+}
+
+.cloud02 {
+  position: relative;
+  top: -10px;
+  left: -200px;
+  z-index: 10;
+}
+
+.cloud03 {
+  position: relative;
+  top: 400px;
+  left: 300px;
+  z-index: 20;
+}
+
+.cloud04 {
+  position: relative;
+  top: 50px;
+  left: 350px;
+  z-index: 20;
+}
+
+.cloud05 {
+  position: relative;
+  top: -100px;
+  left: 250px;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 900px) {
+  .heroTitle {
+    font-size: 8rem;
+    z-index: 25;
+  }
+  .descriptionHero {
+    top: 40px;
+    z-index: 25;
+  }
+  .svgHeadline {
+    font-size: 5rem;
+    position: absolute;
+    left: -25%;
+    top: 30%;
+  }
+  .moonImage svg {
+    visibility: hidden;
+  }
+  .scrollDown {
+    z-index: 25;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cloud01 {
+    display: none;
+  }
+  .cloud02 {
+    display: none;
+  }
+  .cloud03 {
+    display: none;
+  }
+  .cloud04 {
+    display: none;
+  }
+  .cloud05 {
+    display: none;
+  }
+  .moonImage:not(:nth-child(1)) {
+    display: none;
+  }
+  .moonlight {
+    display: none;
+  }
+  .cloud01 {
+    display: none;
+  }
+  .firstRedLine {
+    display: block;
+    position: relative;
+    width: 110px;
+    height: 5px;
+    background-color: #ff4d5a;
+    border-radius: 50px;
+    top: 120px;
+  }
+  .secondRedLine {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 110px;
+    width: 110px;
+    height: 5px;
+    background-color: #ff4d5a;
+    border-radius: 50px;
+  }
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2% (1fr)[2] 2%;
+      grid-template-columns: 2% repeat(2, 1fr) 2%;
+  -ms-grid-rows: 0;
+      grid-template-rows: 0;
+  z-index: 100;
+}
+
+.firstHamburger,
+.secondHamburger {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 50px;
+  margin: 10px;
+  border-radius: 50px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.activeHamburgerButtonFirst {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+.activeHamburgerButtonSecond {
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+.navlink a:not(.name) {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.navlink a i {
+  font-size: 4rem;
+  margin-right: 50px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.navlink a i:hover {
+  opacity: 0.7;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 0.25rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.name:hover {
+  opacity: 0.7;
+}
+
+.rightNavbar {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.leftNavbar {
+  grid-row: 0;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin-top: 20px;
+}
+
+#frenchLanguage {
+  margin-right: 20px;
+  font-family: "FuturaMedium";
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#frenchLanguage:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#frenchLanguage:focus {
+  outline: none;
+}
+
+#englishLanguage {
+  margin-right: 20px;
+  font-family: "FuturaMedium";
+  font-size: 2.5rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+#englishLanguage:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#englishLanguage:focus {
+  outline: none;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.fullNavbar {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a));
+  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.75s all ease-in-out;
+  transition: 0.75s all ease-in-out;
+  z-index: 50;
+}
+
+.navlinksFull a {
+  font-family: "FuturaMedium";
+  color: white;
+  font-weight: 900;
+  font-size: 10rem;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  -webkit-text-decoration: line-through transparent;
+          text-decoration: line-through transparent;
+}
+
+.navlinksFull a:hover {
+  -webkit-text-decoration: line-through white;
+          text-decoration: line-through white;
+}
+
+.fullNavbarActive {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  z-index: 50;
+}
+
+.toggle .firstHamburger {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.toggle .secondHamburger {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: red;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles pour cette Media Queries */
+}
+
+@media only screen and (max-width: 650px) {
+  .fullNavbar a {
+    font-size: 7rem;
+  }
+}
+
+.about {
+  background: -webkit-gradient(linear, left top, left bottom, from(#061d38), to(#e4692e));
+  background: linear-gradient(#061d38, #e4692e);
+  height: 100vh;
+}
+
+.titleAboutSubLine {
+  position: absolute;
+  left: 12%;
+  top: 36%;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.subLine1 {
+  display: block;
+  position: relative;
+  top: -10px;
+  left: px;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+}
+
+.subLine2 {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 50px;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+}
+
+.subtitleAbout {
+  position: absolute;
+  font-size: 4rem;
+  left: 250px;
+  top: 57%;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+}
+
+.aboutDescription {
+  color: white;
+  font-family: "FuturaItalic";
+  letter-spacing: 0.1rem;
+  font-size: 4rem;
+  position: absolute;
+  top: 72%;
+  left: 12%;
+}
+
+.aboutMark {
+  background-color: transparent;
+  color: #ff4d5a;
+}
+
+.rightSectionAbout {
+  width: 40vw;
+  height: 50vh;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+
+.googleWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+
+#map {
+  background-color: grey;
+  width: 98%;
+  height: 98%;
+}
+
+.knowMoreAbout {
+  color: white;
+  font-family: "FuturaMedium";
+  font-size: 4rem;
+  position: absolute;
+  left: 65%;
+  top: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 25;
+}
+
+.knowMoreAbout:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.arrowAbout {
+  position: relative;
+  top: 5px;
+}
+
+.arrowAbout path {
+  fill: white;
+}
+
+.hiddenKnowMoreSection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 50;
+  background-color: #061d38;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  -webkit-transition: 0.75s all ease-in-out;
+  transition: 0.75s all ease-in-out;
+}
+
+.activeHiddenAbout {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  z-index: 50;
+}
+
+.hiddenKnowMoreSectionArrowBack path {
+  fill: white;
+}
+
+.photoProfile {
+  position: relative;
+  background-color: red;
+  width: 258px;
+  height: 300px;
+  margin: 5%;
+  margin-left: 15%;
+  border: white solid 2px;
+}
+
+.aboutKnowMoreDescription {
+  color: white;
+  font-family: "FuturaMedium";
+  font-size: 2.5rem;
+  width: 80%;
+  margin: 5%;
+  z-index: 24;
+}
+
+.containerKnowMoreTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.hiddenKnowMoreSectionArrowBack {
+  position: absolute;
+  top: 9%;
+  left: 3%;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 2px transparent;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hiddenKnowMoreSectionArrowBack svg {
+  padding: 2px;
+}
+
+.hiddenKnowMoreSectionArrowBack:hover {
+  border: solid 2px white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .titleAboutSubLine {
+    top: 45%;
+  }
+  .subLine1 {
+    position: relative;
+    top: 150px;
+  }
+  .subLine2 {
+    position: relative;
+    top: 170px;
+  }
+  .knowMoreAbout {
+    position: relative;
+    top: 250%;
+    left: 40%;
+  }
+  .googleWrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .containerKnowMoreTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 1.5rem;
+  }
+  .photoProfile {
+    width: 20vw;
+    height: 22vh;
+    margin-top: 70px;
+  }
+  .aboutKnowMoreDescription {
+    margin: 5px;
+    overflow: scroll;
+    height: 100%;
+    margin-left: 12%;
+  }
+  .rightSectionAbout {
+    width: 90vw;
+    height: 30vh;
+    position: absolute;
+    top: 15%;
+    left: 8%;
+  }
+  .aboutTitle {
+    position: absolute;
+    top: 30%;
+    font-size: 6rem;
+    background-color: black;
+  }
+  .aboutDescription {
+    font-size: 2.5rem;
+    position: absolute;
+    left: 5%;
+    top: 75%;
+  }
+  .subtitleAbout {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 55%;
+    white-space: nowrap;
+    left: 45%;
+  }
+  .knowMoreAbout {
+    top: 170px;
+    left: 27%;
+  }
+  .photoProfile {
+    position: relative;
+    background-color: red;
+    width: 40vw;
+    height: 46vw;
+    margin: 5%;
+    margin-left: 15%;
+    border: white solid 2px;
+  }
+}
+
+.works {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e4692e), to(#fff14c));
+  background: linear-gradient(#e4692e, #fff14c);
+}
+
+.worksTitle {
+  position: absolute;
+  left: 12%;
+  top: 36%;
+  color: #061d38;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.worksTitleContainer {
+  position: absolute;
+  left: 12%;
+  top: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.worksRedLine1 {
+  display: block;
+  position: relative;
+  top: -5px;
+  left: 15px;
+  width: 110px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+.worksRedLine2 {
+  display: block;
+  position: relative;
+  top: 10px;
+  left: 45px;
+  width: 110px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.worksRightSection {
+  height: 100%;
+  width: 850px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.subtitleWorks {
+  position: relative;
+  font-size: 4rem;
+  left: 0px;
+  top: 40px;
+  color: #061d38;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+}
+
+#scene-c {
+  position: absolute;
+  left: 50%;
+  top: -5%;
+}
+
+.sunlight {
+  position: relative;
+  top: 20px;
+  left: -500px;
+  z-index: 14;
+}
+
+.sun {
+  position: relative;
+  left: -450px;
+  top: 75px;
+  z-index: 15;
+}
+
+.cloudDay01 {
+  position: relative;
+  top: 20px;
+  left: -450px;
+  z-index: 20;
+}
+
+.cloudDay02 {
+  position: relative;
+  top: 550px;
+  left: -550px;
+  z-index: 20;
+}
+
+.cloudDay03 {
+  position: relative;
+  top: 250px;
+  left: -50px;
+  z-index: 20;
+}
+
+.cloudDayBack01 {
+  z-index: 10;
+  position: relative;
+  top: 250px;
+  left: -600px;
+}
+
+.cloudDayBack02 {
+  z-index: 10;
+  position: relative;
+  top: 600px;
+  left: -50px;
+}
+
+.projectSlide {
+  color: #061d38;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectSlide a {
+  color: #061d38;
+  border: 4px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projectSlide a:hover {
+  border: 4px solid #061d38;
+}
+
+.projectSlide img {
+  height: 100%;
+  width: 100%;
+}
+
+.projectSlide p {
+  font-size: 5rem;
+  color: white;
+  background-color: #061d38;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .worksRightSection {
+    position: absolute;
+    left: 35%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .worksTitle {
+    position: absolute;
+    top: 12%;
+    left: 22%;
+  }
+  .worksTitleContainer {
+    position: absolute;
+    top: 25%;
+    left: 22%;
+  }
+  .cloudDay01 {
+    position: relative;
+    top: 150px;
+  }
+  .sun {
+    visibility: hidden;
+  }
+  .projectSlide p {
+    font-size: 3rem;
+  }
+  .projectSlide {
+    font-size: 4rem;
+  }
+  .worksRightSection {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 350px;
+  }
+}
+
+.contact {
+  height: 100vh;
+  background-color: #061d38;
+}
+
+.contactRedLine01 {
+  display: block;
+  position: absolute;
+  top: 38%;
+  left: 150px;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+}
+
+.contactRedLine02 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 180px;
+  width: 110px;
+  height: 5px;
+  background-color: #ff4d5a;
+  border-radius: 50px;
+}
+
+.contactTitle {
+  position: absolute;
+  left: 8%;
+  top: 22.5%;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+}
+
+.subtitleContact {
+  position: relative;
+  left: 8%;
+  top: 150px;
+  color: white;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "FuturaMedium";
+  font-size: 10rem;
+  z-index: 10;
+  font-size: 8rem;
+}
+
+.subtitleContact a {
+  text-decoration: none;
+  color: white;
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.subtitleContact a:hover {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+}
+
+.githubContact:hover,
+.cvContact:hover,
+.linkedInContact:hover {
+  -webkit-filter: drop-shadow(0px 0px 20px white);
+          filter: drop-shadow(0px 0px 20px white);
+}
+
+#scene-d {
+  position: absolute;
+  left: 45%;
+  top: 5%;
+}
+
+.starsContact {
+  position: relative;
+  left: -400px;
+  top: -200px;
+}
+
+.crescentMoon {
+  position: relative;
+  left: 350px;
+  top: 100px;
+  z-index: 15;
+  -webkit-filter: drop-shadow(0px 0px 120px #ffffff);
+          filter: drop-shadow(0px 0px 120px #ffffff);
+}
+
+.moonLightContact {
+  position: relative;
+  top: -300px;
+  left: -150px;
+  z-index: 14;
+}
+
+.cloudNight01 {
+  position: relative;
+  left: 550px;
+  top: 450px;
+  z-index: 20;
+}
+
+.cloudNightBack02 {
+  position: relative;
+  left: 150px;
+  top: 375px;
+  z-index: 10;
+}
+
+.cloudNight03 {
+  position: relative;
+  left: 300px;
+  top: -50px;
+  z-index: 20;
+}
+
+.cloudNight04 {
+  position: relative;
+  left: -50px;
+  top: 100px;
+  z-index: 20;
+}
+
+.cloudNightBack05 {
+  position: relative;
+  left: 550px;
+  top: 150px;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 650px) {
+  .mailContact a {
+    font-size: 3rem;
+  }
+  .contactTitle {
+    font-size: 6rem;
+  }
+  .numberContact {
+    font-size: 3rem;
+  }
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/*# sourceMappingURL=styles.css.map */
